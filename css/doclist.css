@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Microsoft YaHei;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.pdfobject-container {
+    height: 101%;
+    margin-left: 250px;
+    background: #525659;
+}
+
+.nav {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+.nav .list {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #353535;
+    font-size: 14px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav .list:hover,
+.nav .list.active {
+    background: #e8e8e8;
+}
+
+.nav .header {
+    height: 50px;
+    background: #607D8B;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 10px solid #fff;
+}

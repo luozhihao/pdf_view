@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运维中心文件列表</title>
+    <link rel="stylesheet" type="text/css" href="css/doclist.css">
+</head>
+
+<body>
+    <div class="box">
+        <ul class="nav">
+            <li class="header">运维中心文件列表</li>
+            <li class="list active" data-src="pdf/pdf1.pdf">运维中心简介1</li>
+            <li class="list" data-src="pdf/pdf2.pdf">运维中心简介2</li>
+            <li class="list" data-src="pdf/pdf3.pdf">运维中心简介3</li>
+            <li class="list" data-src="pdf/pdf4.pdf">运维中心简介4</li>
+            <li class="list" data-src="pdf/pdf5.pdf">运维中心简介5</li>
+        </ul>
+        <div id="pdf"></div>
+    </div>
+    <script src="js/pdfobject.min.js"></script>
+    <script src="js/doclist.js"></script>
+    <script>
+        PDFObject.embed("pdf/pdf1.pdf", "#pdf");
+    </script>
+</body>
+</html>
